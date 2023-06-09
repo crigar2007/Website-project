@@ -1,11 +1,122 @@
-<style>
-body{
-  background: #373b40;
-  color: white;
-}
-</style>
-<h1 style= "text-align: center; color:#6397db">Do you have Perfect Pitch?</h1>
-<h2 style= " color:lightblue">What is perfect pitch?</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clicking Sound When Click Button</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, 
+initial-scale=1" />
+</head>
+<style type="text/css">
+  .note-buttons{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 70px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    vertical-align: middle;
+    transition: opacity 0.15s;  }
+
+  .note-buttons:hover {
+    opacity: 0.8;
+  }
+
+  .note-buttons:active {
+    opacity: 0.5;
+
+  }
+  .audioBT{
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #428bca;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  display: inline;
+  font-weight: 400;
+  height: auto;
+  line-height: 23.94px;
+  width: auto;
+  border: none;
+  border-radius: 5px;
+  }
+  .audioBT:hover{
+    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+  }
+  body{
+    font-family: system-ui;
+    background: black;
+    color: white;
+    background-image: url("https://png.pngtree.com/png-vector/20221225/ourmid/pngtree-seamless-pattern-of-music-notes-png-image_6536657.png");
+  }
+</style> 
+<center>
+  <h1 class="title">Perfect Pitch Quiz</h1>
+
+  <p>
+    <span id="correct-reps">0</span> 
+     of  
+    <span id="total-reps">0</span> 
+     correct 
+  </p>
+  <p><button class="audioBT"> Hear First Question </button></p>
+
+</head> 
+<body>
+<button class="note-buttons" onclick="audioF.play();">
+  F
+</button>
+<button class="note-buttons" onclick="audioC.play();">
+  C
+</button>
+<button class="note-buttons" onclick="audioD.play();">
+  D
+</button>
+<button class="note-buttons" onclick="audioG.play();"> 
+  G
+</button>
+
+<button class="note-buttons" onclick="audioB.play();">
+  B
+</button>
+<button class="note-buttons" onclick="audioA.play();">
+  A
+</button>
+</center>
+<script type="text/javascript">
+  const audio1 = new Audio(); 
+  audio1.src = "./A_Note.mp3";
+  
+  const audioF = new Audio(); 
+  audioF.src = "./F Note.mp3";
+
+  const audioC = new Audio(); 
+  audioC.src = "./C Note.mp3";
+  
+  const audioD = new Audio(); 
+  audioD.src = "./D Note.mp3";
+
+  const audioG = new Audio(); 
+  audioG.src = "./G Note.mp3";
+  
+  const audioB = new Audio(); 
+  audioB.src = "./B Note.mp3";
+
+  const audioA = new Audio(); 
+  audioA.src = "./A Note.mp3";
+</script>
+</body>
+</html> 
+<html>
+  <body>
+<h1 style= "text-align: center;">Do you have Perfect Pitch?</h1>
+<h2 >What is perfect pitch?</h2>
 
 <em>
 <p>
@@ -16,37 +127,27 @@ body{
 The possession of perfect pitch brings several advantages. Musicians with perfect pitch can quickly learn and play music by ear, as they can accurately reproduce the pitches they hear. It enhances their ability to transcribe and sight-read music, as they can easily identify the written notes. Furthermore, perfect pitch can aid in the recognition of key signatures and modulations, facilitating a deeper understanding and interpretation of music.
 </p>
 </em>
-<h2 style= "background-color:#9dbfed;">Famous artist with perfect pitch</h2>
+<h2 >Famous artist with perfect pitch</h2>
+
 <em>
-Wolfgang Amadeus Mozart, one of the greatest composers in history, was renowned for his perfect pitch. He possessed an extraordinary ability to recognize and reproduce musical notes effortlessly, contributing to his remarkable compositions.
-
+<img src="https://cdn.britannica.com/35/74835-050-F0B71060/canvas-oil-Wolfgang-Amadeus-Mozart-Barbara-Krafft-1819.jpg"
+ALIGN= left
+HSPACE=20
+VSPACE=10
+width=100
+height=130
+BR CLEAR=left />Wolfgang Amadeus Mozart, one of the greatest composers in history, was renowned for his perfect pitch. He possessed an extraordinary ability to recognize and reproduce musical notes effortlessly, contributing to his remarkable compositions.
+<p>
 Ludwig van Beethoven, another iconic composer, is believed to have had perfect pitch as well. His ability to hear and remember pitches without any reference was instrumental in his creation of groundbreaking and emotionally powerful music.
+</p>
+<P>
 
+</P>
 Stevie Wonder, the legendary singer-songwriter, is known for his exceptional vocal range and musical talent. He possesses perfect pitch, which has undoubtedly played a significant role in his ability to create soulful and memorable melodies.
+<P>
 
+</P>
 Mariah Carey, the renowned pop vocalist, has also been recognized for her perfect pitch. Her exceptional ability to hit high notes and execute complex vocal runs with precision and accuracy can be attributed to this rare talent.
 
 These artists, among others, demonstrate how perfect pitch can elevate musicians to new heights of creativity, expression, and technical proficiency, leaving a lasting impact on the world of music.</em>
-<h1 style= "text-align: center;background-color:#6397db;">perfect pitch test</h1>
-<p>
- <img src="https://www.dacapoalcoda.com/_dl/images/c-music-note-treble-clef.png"
- width="570">
- </p>
- <p>
- <center>
- <img src="https://o.remove.bg/downloads/31d40c3e-6315-4e14-9365-22207990c14a/png-clipart-eighth-note-musical-note-sixteenth-note-whole-note-music-notes-miscellaneous-musical-composition-thumbnail-removebg-preview.png"
- width= "50"
- hieght="100">
- </center>
- </p>
-
- 
-
-<button style= "border-radius:100px; background: red">C3</button>
-<button style= "border-radius:100px; background: red">D</button>
-<button style= "border-radius:100px; background: yellow">E</button>
-<button style= "border-radius:100px; background: lightgreen">F</button>
-<button style= "border-radius:100px; background: violet">G</button>
-<button style= "border-radius:100px; background: green">A</button>
-<button style= "border-radius:100px; background: blue">B</button>
-<button style= "border-radius:100px; background: purple">C4</button>
+</html>
